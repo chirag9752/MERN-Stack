@@ -1,0 +1,36 @@
+*{
+    color: blue;
+}
+p{
+    color: red;
+    border: 1px solid red;
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    float: justify;
+    text-indent: 15%;            /* initital gaps */
+}
+/* 
+a{
+    /* text-decoration: none; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    /* text-align: underline; */
+    /* text-transform: capitalize;  */
+    /* text-transform: uppercase; 
+} 
+*/
+a:link{
+    color:blue;
+}
+a:visited
+{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: aqua;
+}
