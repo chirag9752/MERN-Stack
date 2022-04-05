@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Form 3</title>
+    </head>
+    <body>
+        <h1>This is first form</h1>
+        <br>
+        <form action="thank.html" method="post" enctype="application/x-www-form-urlencoded" target="_blank">
+            <fieldset>
+                <legend>Personal Information</legend>
+           username :<input type="text" required/><br><br>
+
+           password :<input type="password" name="pass" required/><br><br>
+
+           Gender :<input type="radio" name="gender" value="male">MALE
+           <input type="radio" name="gender" value="FEMALE">FEMALE
+           <br>
+           <input type="radio" name="gender" value="OTHER">OTHER 
+           <br>
+           <input type="text" disabled>
+           <br>
+           <input type="checkbox" name="I agree" value="I agree with terms and conditions">
+           I agree with terms and conditions
+           <br>
+           <input type="color" name="color">
+           <input type="file" name="fileupload">
+           <br>
+           <input type="search" name="q" readonly>
+           <br>
+           <button formaction="thank.html">Click here to submit</button>
+           <input type="submit" value="SUBMIT">
+           <input type="reset" value="Reset">
+
+        </fieldset>
+        </form>
+    </body>
+</html>
