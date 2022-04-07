@@ -7,7 +7,7 @@ function captchagenerator(){
   
 //   console.log( Math.random())             //it generate random no. from 0 to 1 in points 
 
-var A,B,C,D,E,F,x;
+var A,B,C,D,E,F,result;
 
  A = (alpha[ Math.floor(Math.random()*alpha.length)]);
  B = (alpha[ Math.floor(Math.random()*alpha.length)]);
@@ -16,14 +16,33 @@ var A,B,C,D,E,F,x;
  E = (alpha[ Math.floor(Math.random()*alpha.length)]);
  F = (alpha[ Math.floor(Math.random()*alpha.length)]);
 
- x = A+B+C+D+E+F;
- document.getElementById("mainCaptcha").value=x;
+ result = A +" "+ B +" "+ C +" "+ D +" "+ E +" "+F;
+ document.getElementById("mainCaptcha").value=result;
 
 }    
-captchagenerator();
+
 
 
 // is valid 
+function isValid()
+{
+    var one = removeSpaces(document.getElementById("mainCaptcha").value);
+    var two = removeSpaces(document.getElementById("inputCaptcha").value);
 
-
+    if(one == two)
+{
+    return true;
+}
+else{
+    return false;
+}
+}
 // remove spaces
+
+function removeSpaces(string){
+    // console.log(string.split(" ").join(""));
+    var x = string.split(" ");
+    var s = x.join("");
+
+    return s;
+}
