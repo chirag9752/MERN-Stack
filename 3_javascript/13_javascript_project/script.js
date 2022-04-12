@@ -46,3 +46,5 @@ function removeSpaces(string){
 
     return s;
 }
+
+// removeSpaces("i am the best");
